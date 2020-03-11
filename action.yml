@@ -1,0 +1,21 @@
+name: "Slack Job Status Notifier"
+description: "GitHub Action that pushes job status notifications to slack"
+inputs:
+  slack_token:
+    description: "Slack web-hook token"
+    required: true
+  slack_channel:
+    description: "Slack channel id to post to"
+    required: true
+  status:
+    description: job.status
+    required: true
+  job_name:
+    description: Display name of current job
+    required: true
+runs:
+  using: "node12"
+  main: "dist/index.js"
+branding:
+  icon: "message-square"
+  color: "gray-dark"

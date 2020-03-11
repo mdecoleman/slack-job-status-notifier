@@ -1,0 +1,36 @@
+{
+  "name": "slack-job-status-notifier",
+  "version": "1.0.0",
+  "description": "GitHub Action that pushes job status notifications to slack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/main.js",
+    "package": "npx ncc build src/main.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdecoleman/notify-slack.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "slack",
+    "messaging"
+  ],
+  "author": "Matthew Coleman <matthewdecoleman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdecoleman/notify-slack/issues"
+  },
+  "homepage": "https://github.com/mdecoleman/notify-slack#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0",
+    "@slack/web-api": "^5.8.0",
+    "@slack/webhook": "^5.0.3",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5"
+  }
+}
