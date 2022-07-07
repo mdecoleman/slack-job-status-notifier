@@ -28,7 +28,7 @@
     "@actions/github": "^1.1.0",
     "@slack/web-api": "^5.8.0",
     "@slack/webhook": "^5.0.3",
-    "moment": "^2.24.0"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.20.5"
