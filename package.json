@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/mdecoleman/notify-slack#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.9.1",
     "@actions/github": "^1.1.0",
     "@slack/web-api": "^5.8.0",
     "@slack/webhook": "^5.0.3",
